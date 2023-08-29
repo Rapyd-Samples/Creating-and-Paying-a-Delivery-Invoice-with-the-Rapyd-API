@@ -38,11 +38,9 @@ export async function VendorDashboard(props: { user: User }) {
         </TableRow>
       </TableHeader>
       <TableBody>
-        {invoices.map((invoice, index) => (
+        {invoices.map((invoice) => (
           <TableRow key={`${invoice._id}`}>
-            <TableCell className="font-medium">
-              INV{`${index + 1}`.padStart(3, "0")}
-            </TableCell>
+            <TableCell className="font-medium">{invoice.code}</TableCell>
             <TableCell>{currencyFormatter.format(invoice.total)}</TableCell>
             <TableCell className="text-right">
               <Badge

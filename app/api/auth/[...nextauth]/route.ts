@@ -33,14 +33,7 @@ const authOptions: AuthOptions = {
       session.user.id = token.id;
       session.user.type = token.type;
 
-      return {
-        ...session,
-        user: {
-          ...session.user,
-          id: token.id,
-          type: token.type,
-        },
-      };
+      return session;
     },
     async jwt({ token, user }) {
       if (user) {
@@ -121,6 +114,7 @@ const authOptions: AuthOptions = {
           email: existingUser.email,
           type: existingUser.type,
           customerId: existingUser.customerId,
+          walletId: existingUser.walletId,
         };
       },
     }),

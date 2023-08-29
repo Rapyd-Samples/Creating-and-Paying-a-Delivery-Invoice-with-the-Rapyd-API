@@ -1,9 +1,10 @@
 "use client";
 
-import { Table, X } from "lucide-react";
+import { X } from "lucide-react";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import {
+  Table,
   TableHeader,
   TableRow,
   TableHead,
