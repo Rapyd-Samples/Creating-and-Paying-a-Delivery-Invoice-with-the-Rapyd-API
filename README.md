@@ -7,7 +7,7 @@ Follow the Creating and Paying a Delivery Invoice with the Rapyd API article to 
 - [Ngrok (for testing Rapyd API callbacks)](https://ngrok.com/download)
 - MongoDB database
 
-Follow the article to properly fill out the `.env` file.
+Follow the [article](https://community.rapyd.net/t/creating-and-paying-a-delivery-invoice-with-the-rapyd-api/59425) to properly fill out the `.env` file.
 
 ## Getting Started
 
